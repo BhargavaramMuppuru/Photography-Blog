@@ -1,1 +1,1 @@
-# Balu-s-Photography-Blog
+# Balu-Photography-Blog
