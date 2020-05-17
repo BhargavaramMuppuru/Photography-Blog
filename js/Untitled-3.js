@@ -87,4 +87,4 @@ var gridCtrl = contentBoxApp.controller('GridCtrl', function($scope) {
   $scope.toggleBlurb = function($event) {
     console.log($event);
   };
-});
+});// JavaScript Document
