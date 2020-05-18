@@ -1,45 +1,190 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
+ 
+<title>Balu Photography</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
-	<title>Balu Photography</title>
+<link rel="stylesheet" href="..//animate.css">
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:600,900" rel="stylesheet">
   <link rel="stylesheet" href="css/component.css">
-	
+  
   <link rel="stylesheet" href="css/owl.theme.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/vegas.min.css">
-<!--	 <link rel="stylesheet" href="css/style.css"> -->
-  <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/vegas.min.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
 
-	<!-- Google web font  -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300" rel="stylesheet" type="text/css">
-	
+<link rel="stylesheet" type="text/css" href="css/blog.css">
+<script src="..//wow.min.js"></script>
+<style>
+body {
+background: #ffffff;    
+    font-family: 'Roboto Condensed', sans-serif;
+    }
+#blog-landing {
+margin-top: 81px;
+position: relative;
+max-width: 100%;
+width: 100%;
+}
+img {
+width: 100%;
+max-width: 100%;
+height: auto;
+}
+.white-panel {
+position: absolute;
+background: white;
+box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+padding: 10px;
+}
+.white-panel h1 {
+font-size: 1em;
+}
+.white-panel h1 a {
+color: #A92733;
+}
+.white-panel:hover {
+box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+margin-top: -5px; 
+transition: all 0.3s ease-in-out;
+}
+
+.navbar-default {
+  background: #ffffff;
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
+  border: none;
+  margin-bottom: 0px !important;
+}
+
+.navbar-default .navbar-brand {
+  
+  color: #000;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.navbar-default .navbar-nav li a {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    padding-right: 22px;
+    padding-left: 22px;
+}
+
+.navbar-default .navbar-nav li a span {
+  position: relative;
+  display: block;
+  padding-bottom: 2px;
+}
+
+.navbar-default .navbar-nav li a span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-default .navbar-nav li a:hover span:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.navbar-default .navbar-nav li.active a span:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  background-color: #304352;
+}
+
+.navbar-default .navbar-nav > li a:hover {
+    color: #304352 !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #777;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #304352;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+     border: none;
+     padding-top: 10px;
+  }
+
+.navbar-default .navbar-toggle .icon-bar {
+    border-color: transparent;
+  }
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { 
+  background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .navbar-default .navbar-nav li a span:before {
+    background: transparent !important;
+  }
+  .navbar-default .navbar-nav li.active a {
+    background: transparent;
+    background: none;
+    color: #304352 !important;
+  }
+  .navbar-default .navbar-nav li.active a span:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+
+</style>
+ 
 </head>
-<body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
-
-<!-- Preloader section -->
-
-<!--
-<div class="preloader">
-     <div class="sk-spinner sk-spinner-pulse"></div>
-</div>
--->
-
-
-<!-- Navigation section  -->
-
-   <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<body>
+    <!-- NAVBAR
+    
+================================================== -->
+ <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="navbar-header">
         <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="icon icon-bar"></span>
@@ -56,330 +201,189 @@
           </ul>
        </div>
     </div>
-    
-
-<!-- Blog section -->
-<section id="blog">
-<div class="container" style="background: #fff;">
-<div class="wow fadeInUp" data-wow-delay="0.3s">
-        <div class="section-title">
-          <h1 class="text-center">Blog</h1>
-          <p>Nullam scelerisque, quam nec iaculis vulputate, arcu ligula sollicitudin nisl, ac volutpat erat nulla a arcu.</p>
-        </div>
-      </div>
-
-  <section class="cards">
-    <article class="horizontal card">
-      <img class="card__img" src="images/moon.jpg" alt="">
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          The MOON!!
-        </div>
-        <div class="card__date">18 May 2020 &middot; <span class="card__time-to-read">5 min read</span></div>
-        <div class="card__excerpt">
-         A person who don't like the moon doesn't exist, do they? 
-        It reminds me of many memories..
-        </div>
-      </div>
-    </article>
-    <article class="vertical card">
-      <img class="card__img" src="https://picsum.photos/256/196/?image=990" alt="">
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          Test Post: Electric Boogaloo
-        </div>
-        <div class="card__date">14 March 2011 &middot; 5 min read</div>
-        <div class="card__excerpt">
-          This is a test article, in a perculiar context, to see whether grid and flexbox works to make a blog...
-        </div>
-      </div>
-    </article>
-    <article class="vertical card">
-      <img class="card__img" src="https://picsum.photos/256/196/?image=123" alt="" >
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          Test Post: Electric Boogaloo
-        </div>
-        <div class="card__date">14 March 2011 &middot; 5 min read</div>
-        <div class="card__excerpt">
-          This is a test article, in a perculiar context, to see whether grid and flexbox works to make a blog...
-        </div>
-      </div>
-    </article>
-    <article class="vertical card">
-      <img class="card__img" src="https://picsum.photos/256/196/?image=421" alt="">
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          Test Post: Electric Boogaloo
-        </div>
-        <div class="card__date">14 March 2011 &middot; 5 min read</div>
-        <div class="card__excerpt">
-          This is a test article, in a perculiar context, to see whether grid and flexbox works to make a blog...
-        </div>
-      </div>
-    </article>
-    <article class="horizontal card">
-      <img class="card__img" src="https://picsum.photos/256/196/?image=424" alt="">
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          Test Post: Electric Boogaloo
-        </div>
-        <div class="card__date">14 March 2011 &middot; 5 min read</div>
-        <div class="card__excerpt">
-          This is a test article, in a perculiar context, to see whether grid and flexbox works to make a blog...
-        </div>
-      </div>
-    </article>
-    <article class="vertical card">
-      <img class="card__img" src="https://picsum.photos/256/196/?image=721" alt="">
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          Test Post: Electric Boogaloo
-        </div>
-        <div class="card__date">14 March 2011 &middot; 5 min read</div>
-        <div class="card__excerpt">
-          This is a test article, in a perculiar context, to see whether grid and flexbox works to make a blog...
-        </div>
-      </div>
-    </article>
-    <article class="vertical card">
-      <img class="card__img" src="https://picsum.photos/256/196/?image=426" alt="">
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          Test Post: Electric Boogaloo
-        </div>
-        <div class="card__date">14 March 2011 &middot; 5 min read</div>
-        <div class="card__excerpt">
-          This is a test article, in a perculiar context, to see whether grid and flexbox works to make a blog...
-        </div>
-      </div>
-    </article>
-    <article class="reverse-horizontal card">
-      <img class="card__img" src="https://picsum.photos/256/196/?image=161" alt="">
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          Test Post: Electric Boogaloo
-        </div>
-        <div class="card__date">14 March 2011 &middot; 5 min read</div>
-        <div class="card__excerpt">
-          This is a test article, in a perculiar context, to see whether grid and flexbox works to make a blog...
-        </div>
-      </div>
-    </article>
-      <article class="horizontal card">
-      <img class="card__img" src="images/moon.jpg" alt="">
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          The MOON!!
-        </div>
-        <div class="card__date">18 May 2020 &middot; <span class="card__time-to-read">5 min read</span></div>
-        <div class="card__excerpt">
-         A person who don't like the moon doesn't exist, do they? 
-        It reminds me of many memories..
-        </div>
-      </div>
-    </article>
-    <article class="vertical card">
-      <img class="card__img" src="https://picsum.photos/256/196/?image=990" alt="">
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          Test Post: Electric Boogaloo
-        </div>
-        <div class="card__date">14 March 2011 &middot; 5 min read</div>
-        <div class="card__excerpt">
-          This is a test article, in a perculiar context, to see whether grid and flexbox works to make a blog...
-        </div>
-      </div>
-    </article>
-    <article class="vertical card">
-      <img class="card__img" src="https://picsum.photos/256/196/?image=123" alt="" >
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          Test Post: Electric Boogaloo
-        </div>
-        <div class="card__date">14 March 2011 &middot; 5 min read</div>
-        <div class="card__excerpt">
-          This is a test article, in a perculiar context, to see whether grid and flexbox works to make a blog...
-        </div>
-      </div>
-    </article>
-    <article class="vertical card">
-      <img class="card__img" src="https://picsum.photos/256/196/?image=421" alt="">
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          Test Post: Electric Boogaloo
-        </div>
-        <div class="card__date">14 March 2011 &middot; 5 min read</div>
-        <div class="card__excerpt">
-          This is a test article, in a perculiar context, to see whether grid and flexbox works to make a blog...
-        </div>
-      </div>
-    </article>
-    <article class="horizontal card">
-      <img class="card__img" src="https://picsum.photos/256/196/?image=424" alt="">
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          Test Post: Electric Boogaloo
-        </div>
-        <div class="card__date">14 March 2011 &middot; 5 min read</div>
-        <div class="card__excerpt">
-          This is a test article, in a perculiar context, to see whether grid and flexbox works to make a blog...
-        </div>
-      </div>
-    </article>
-    <article class="vertical card">
-      <img class="card__img" src="https://picsum.photos/256/196/?image=721" alt="">
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          Test Post: Electric Boogaloo
-        </div>
-        <div class="card__date">14 March 2011 &middot; 5 min read</div>
-        <div class="card__excerpt">
-          This is a test article, in a perculiar context, to see whether grid and flexbox works to make a blog...
-        </div>
-      </div>
-    </article>
-    <article class="horizontal card">
-      <img class="card__img" src="https://picsum.photos/256/196/?image=426" alt="">
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          Test Post: Electric Boogaloo
-        </div>
-        <div class="card__date">14 March 2011 &middot; 5 min read</div>
-        <div class="card__excerpt">
-          This is a test article, in a perculiar context, to see whether grid and flexbox works to make a blog...
-        </div>
-      </div>
-    </article>
-      <article class="horizontal card">
-      <img class="card__img" src="https://picsum.photos/256/196/?image=424" alt="">
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          Test Post: Electric Boogaloo
-        </div>
-        <div class="card__date">14 March 2011 &middot; 5 min read</div>
-        <div class="card__excerpt">
-          This is a test article, in a perculiar context, to see whether grid and flexbox works to make a blog...
-        </div>
-      </div>
-    </article>
-      <article class="vertical card">
-      <img class="card__img" src="https://picsum.photos/256/196/?image=421" alt="">
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          Test Post: Electric Boogaloo
-        </div>
-        <div class="card__date">14 March 2011 &middot; 5 min read</div>
-        <div class="card__excerpt">
-          This is a test article, in a perculiar context, to see whether grid and flexbox works to make a blog...
-        </div>
-      </div>
-    </article>
-      <article class="reverse-horizontal card">
-      <img class="card__img" src="https://picsum.photos/256/196/?image=161" alt="">
-      <div class="card__content">
-        <div class="card__type">article</div>
-        <div class="card__title">
-          Test Post: Electric Boogaloo
-        </div>
-        <div class="card__date">14 March 2011 &middot; 5 min read</div>
-        <div class="card__excerpt">
-          This is a test article, in a perculiar context, to see whether grid and flexbox works to make a blog...
-        </div>
-      </div>
-    </article>
-  </section>
-   
-</div>
-     </section>
-
-<!-- Contact section -->
-<!--
  
-<section id="contact"  style="background: #304352">
-  
+<div class="container marketing">
+<section id="blog-landing">
+
+<article class="white-panel wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s"> 
+<img src="images/moon.jpg" alt="ALT">
+<h1 class="heading-one">
+<a href="#">The Moon!!</a>
+</h1>
+
+<p class="para-one">A person who don't like the moon doesn't exist, do they? 
+It reminds me of many memories from my childhood which most of the people of this generation are missing. 
+The moon is my first date. 
+Yes I used to have my dinner watching the moon from my terrace. 
+The moon is my first teacher.
+Yes it taught me how to spread light in the darkest.
+The moon is my happiness.
+Yes it showers lots of love..</p>
+</article>
+
+
+<article class="white-panel wow slideInUp" data-wow-duration="0.7s" data-wow-delay="0.7s"> <img src="images/a2.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Is your website converting visits into sales? </a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. Curabitur magna ligula, condimentum sed lacus nec, vulputate cursus sem. Sed a semper felis. Curabitur ligula enim, auctor eget rutrum a, convallis non diam. Vivamus ullamcorper aliquam purus, et euismod justo. Nulla</p>
+</article>
+<article class="white-panel wow slideInDown" data-wow-duration="0.9s" data-wow-delay="0.9s"> <img src="images/a5.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. Curabitur magna ligula, </p>
+</article>
+<article class="white-panel wow slideInRight" data-wow-duration="1s" data-wow-delay="1s"> <img src="images/006.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Putting users first with flat design</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. Curabitur magna ligula, condimentum sed lacus nec, vulputate cursus sem. Sed a semper felis. Curabitur ligula enim, auctor eget rutrum a, convallis non diam. Vivamus ullamcorper aliquam purus, et euismod justo. Nulla</p>
+</article>
+<article class="white-panel wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="1.5s"> <img src="images/01.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Is your website converting visits into sales? </a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. Curabitur magna ligula</p>
+</article>
+<article class="white-panel wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="1s"> <img src="images/03.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. Curabitur magna ligula, condimentum sed lacus nec, vulputate cursus sem. Sed a semper felis. Curabitur ligula enim, auctor eget rutrum a, convallis non diam. Vivamus ullamcorper aliquam purus, et euismod justo. Nulla</p>
+</article>
+<article class="white-panel wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s"> <img src="images/04.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. Curabitur magna ligula, condimentum sed lacus nec, vulputate cursus sem. Sed a semper felis. Curabitur ligula enim, auctor eget rutrum a, convallis non diam. Vivamus ullamcorper aliquam purus, et euismod justo. Nulla</p>
+</article>
+<article class="white-panel wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s"> <img src="images/06.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non so</p>
+</article>
+<article class="white-panel wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s"> <img src="images/about.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. Curabitur magna ligula, condimentum sed lacus nec, vulputate cursus sem. Sed a semper felis.</p>
+</article>
+<article class="white-panel wow slideInDown" data-wow-duration="1s" data-wow-delay="1s"> <img src="images/a4.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. Curabitur magna ligula, condimentum sed lacus nec, vulputate cursus sem. Sed a semper felis. Curabitur ligula enim, auctor eget rutrum a, convallis non diam. Vivamus ullamcorper aliquam purus, et euismod justo. Nulla</p>
+</article>
+<article class="white-panel wow slideInUp" data-wow-duration="1.5s" data-wow-delay="1.5s"> <img src="images/a5.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+</article>
+<article class="white-panel wow slideInLeft" data-wow-duration="1.7s" data-wow-delay="1.7s"> <img src="images/a3.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. Curabitur magna ligula, condimentum sed lacus nec, vulputate cursus sem. Sed a semper felis. Curabitur ligula enim, auctor eget rutrum a, convallis non diam. Vivamus ullamcorper aliquam purus, et euismod justo. Nulla</p>
+</article>
+<article class="white-panel wow bounceInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s"> <img src="images/one.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non </p>
+</article>
+<article class="white-panel wow slideInUp" data-wow-duration="1.5s" data-wow-delay="1s"> <img src="images/team-5.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. Curabitur magna ligula, condimentum sed lacus nec, vulputate cursus sem. Sed a semper felis. Curabitur ligula enim, auctor eget rutrum a, convallis non diam. Vivamus ullamcorper aliquam purus, et euismod justo. Nulla</p>
+</article>
+<article class="white-panel wow slideInRight" data-wow-duration="1.5s" data-wow-delay="1.5s"> <img src="images/team-6.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. Curabitur magna ligula, condimentum sed lacus nec, vulputate cursus sem. Sed a semper felis. Curabitur ligula enim, auctor eget rutrum a</p>
+</article>
+<article class="white-panel wow slideInUp" data-wow-duration="1s" data-wow-delay="1s"> <img src="images/team-5.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. Curabitur magna ligula, condimentum sed lacus nec, vulputate cursus sem. Sed a semper felis. Curabitur ligula enim, auctor eget rutrum a, convallis non diam. Vivamus ullamcorper aliquam purus, et euismod justo. Nulla</p>
+</article>
+<article class="white-panel wow slideInRight" data-wow-duration="1.5s" data-wow-delay="1s"> <img src="images/a2.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. Curabitur magna ligula, condimentum sed lacus nec,</p>
+</article>
+<article class="white-panel wow slideInDown" data-wow-duration="1.5s" data-wow-delay="1s"> <img src="images/1.jpeg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin </p>
+</article>
+<article class="white-panel wow slideInUp" data-wow-duration="1.5s" data-wow-delay="1s"> <img src="images/nature-forest-trees-fog.jpeg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. </p>
+</article>
+<article class="white-panel wow slideInDown" data-wow-duration="1.5s" data-wow-delay="1s"> <img src="images/ololo.jpeg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. Curabitur magna ligula, condimentum sed lacus nec, vulputate cursus sem. Sed a semper felis. Curabitur ligula enim</p>
+</article>
+<article class="white-panel wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay="1s"> <img src="images/xc.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consevamus ullamcorper aliquam purus, et euismod justo. Nulla</p>
+</article>
+<article class="white-panel wow slideInRight" data-wow-duration="1.5s" data-wow-delay="1s"> <img src="images/008.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. Curabitur magna ligula, condimentum sed lacus nec, vulputate cursus sem. Sed a semper felis. Curabitur ligula enim, auctor eget rutrum a, convallis non diam. Vivamus ullamcorper aliquam purus, et euismod justo. Nulla</p>
+</article>
+<article class="white-panel wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="1s"> <img src="images/003.jpg" alt="ALT">
+<h1 class="heading-one"><a href="#">Fantasy football and Raphaël: the vector graphic JS library</a></h1>
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin elit. Curabitur magna ligula, condimentum sed lacus nec, vulputate cursus sem. Sed a semper felis. Curabitur ligula enim, auctor eget rutrum a, convallis non diam. </p>
+</article>
+
+<article class="white-panel wow slideInDown" data-wow-duration="1.5s" data-wow-delay="1s"> <img src="images/004.jpg" alt="ALT">
+
+<h1 class="heading-one">
+<a href="#">Fantasy football and Raphaël: the vector graphic JS library</a>
+</h1>
+
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+</article>
+
+
+<article class="white-panel wow flipInLeft" data-wow-duration="1.5s" data-wow-delay="1s"> <img src="images/team-4.jpg" alt="ALT">
+<h1 class="heading-one">
+<a href="#">Fantasy football and Raphaël: the vector graphic JS library</a>
+</h1>
+
+<p class="para-one">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+</article>
+</section>
+</div>
+
+<footer>
+  <div class="container"  style="background: #304352">
+    
     <div class="row">
 
-       <div class="col-md-offset-1 col-md-10 col-sm-12">
-
-        <div class="col-lg-offset-1 col-lg-10 section-title wow fadeInUp" data-wow-delay="0.4s">
-          <h1>Send a message</h1>
-          <p>Nunc suscipit ante in lectus laoreet, nec pharetra diam dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </div>
-
-        <form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.8s">
-          <div class="col-md-6 col-sm-6">
-            <input name="name" type="text" class="form-control" id="name" placeholder="Name">
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <input name="email" type="email" class="form-control" id="email" placeholder="Email">
-          </div>
-          <div class="col-md-12 col-sm-12">
-            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
-          </div>
-          <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
-            <input type="submit" class="form-control" value="SEND MESSAGE">
-          </div>
-           </form>
-      </div>
-    </div>
-</section>
--->
-
- 
-<!-- Footer section -->
-
- <footer>
-    
-		<div class="row">
-
-			<div class="col-md-12 col-sm-12">
+      <div class="col-md-12 col-sm-12">
             
-                <ul class="social-icon"> 
+                <ul class="social-icon "> 
                     <li><a href="https://www.facebook.com/pbaluphotography" class="fa fa-facebook wow fadeInUp" data-wow-delay="0.2s"></a></li>
                     <li><a href="https://instagram.com/balu._photography?igshid=ymd5vwyiu52b" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.4s"></a></li>
-                    <li><a href="https://www.linkedin.com/in/bala-subramanyam-3a14031aa/" class="fa fa-linkedin wow fadeInUp" data-wow-delay="0.6s"></a></li>
+                    <li><a href="https://www.linkedin.com/in/bala-subramanyam-3a14031aa" class="fa fa-linkedin wow fadeInUp" data-wow-delay="0.6s"></a></li>
                     <li><a href="https://www.youtube.com/channel/UCY2Uu0nteKRueXzvDP_V_LA" class="fa fa-youtube-play wow fadeInUp" data-wow-delay="0.8s"></a></li>
                     <li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="1.0s"></a></li>
                 </ul>
 
-				<p class="wow fadeInUp"  data-wow-delay="1s" >Copyright &copy; 2020 Balu Photography | 
+        <p class="wow fadeInUp"  data-wow-delay="1s" >Copyright &copy; 2020 Balu Photography | 
                 Design: Bhargavaram Muppuru</p>
                 
-            </div>
-	</div>
-</footer> 
+      </div>
+      
+    </div>
+        
+  </div>
+</footer>
 
-<!-- Back top -->
+  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="pinterest_grid.js"></script> 
+<script src="..//wow.min.js"></script>
+<script>
+        $(document).ready(function() {
+
+            $('#blog-landing').pinterest_grid({
+                no_columns: 4,
+                padding_x: 10,
+                padding_y: 10,
+                margin_bottom: 50,
+                single_column_breakpoint: 700
+            });
+
+        });
+    $(function () {
+
+    // animate on scroll
+    new WOW().init();
+});
+    </script>
+
+    <!-- Back top -->
 <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
-<!-- Javascript  -->
- <script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/vegas.min.js"></script>
-<script src="js/modernizr.custom.js"></script>
-<script src="js/toucheffects.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/wow.min.js"></script>
-<!--<script src="js/custom.js"></script>-->
-
 </body>
-</html> 
+
+ 
+
+</html>
