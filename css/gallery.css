@@ -78,25 +78,27 @@ Gallery Hover Effect and Open Imgage
 }
 
 .btn-prev {
-    left: 7%;
+    left: 12%;
+    top: 50%;
 }
 
 .btn-next {
-    right: 7%;
+    right: 12%;
+    top: 50%;
 }
 
 .btn-close {
     position: absolute;
-    right: 2%;
-    top: 10%;
-    color: #fafafa;
-    background-color: #92001d;
-    border: solid 5px #fff;
+    right: 5%;
+    top: 12%;
+    color: #fff;
+    /*background-color: #92001d;*/
+    /*border: solid; 2px #fff;
     padding: 10px 15px;
-    border-radius: 1px;
-    text-decoration: none;
+    border-radius: 3px;
+    text-decoration: none;*/
 }
 
 .btn-close:hover {
-    background-color: #740404;
+    /*background-color: #740404;
 }
